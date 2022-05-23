@@ -46,17 +46,17 @@ Everything else running smooth:
 
 Added another user, gave Staff and Superuser status
 
-![Image 1](/img/add_user.png)
+![Image 1](/pw1/res/add_user.png)pw1/res/added_user.png
 
-![Image 2](/img/added_user.png)
+![Image 2](/pw1/res/added_user.png)
 
-![Image 3](/img/give_rights.png)
+![Image 3](/pw1/res//give_rights.png)
 
-![Image 4](/img/loggable_admins.png)
+![Image 4](/pw1/res/loggable_admins.png)
 
 Added few customers:
 
-![Image 5](/img/customers.png)
+![Image 5](/pw1/res/img/customers.png)
 
 
 
