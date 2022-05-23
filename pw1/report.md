@@ -46,7 +46,7 @@ Everything else running smooth:
 
 Added another user, gave Staff and Superuser status
 
-![Image 1](/pw1/res/add_user.png)pw1/res/added_user.png
+![Image 1](/pw1/res/adduser.png)
 
 ![Image 2](/pw1/res/added_user.png)
 
@@ -56,7 +56,7 @@ Added another user, gave Staff and Superuser status
 
 Added few customers:
 
-![Image 5](/pw1/res/img/customers.png)
+![Image 5](/pw1/res/customers.png)
 
 
 
