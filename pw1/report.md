@@ -41,7 +41,6 @@ Checked few sites, but didnt really get it:
 
 [Stack overflow](https://stackoverflow.com/questions/56310322/django-datetimefield-with-auto-now-add-asks-for-default) 
 
-
 Everything else running smooth:
 
 Added another user, gave Staff and Superuser status
@@ -58,6 +57,6 @@ Added few customers:
 
 ![Image 5](/pw1/res/customers.png)
 
-
+![Image 6](/pw1/res/customer_fields.png)
 
 
