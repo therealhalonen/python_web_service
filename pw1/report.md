@@ -1,4 +1,4 @@
-# Setting up Django 3.9, creating simple CRM and testing & adding stuff to it.
+# Setting up Django 3.2, creating simple CRM and testing & adding stuff to it.
 Using [Ubuntu Mate 22.04 LTS](https://ubuntu-mate.org/download/amd64/) in VirtualBox.
 ```
 halonen@halonen-VirtualBox:~$ lsb_release -a
