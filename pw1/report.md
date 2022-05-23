@@ -1,4 +1,4 @@
-# Setting up Django 3.9, creating simple ORM and testing & adding stuff to it.
+# Setting up Django 3.9, creating simple CRM and testing & adding stuff to it.
 Using [Ubuntu Mate 22.04 LTS](https://ubuntu-mate.org/download/amd64/) in VirtualBox.
 ```
 halonen@halonen-VirtualBox:~$ lsb_release -a
@@ -8,7 +8,7 @@ Description:	Ubuntu 22.04 LTS
 Release:	22.04
 Codename:	jammy
 ```
-Installed Django Python web framework, and made a simple ORM with these instructions:
+Installed Django Python web framework, and made a simple CRM with these instructions:
 [Django 4 Instant Customer Database Tutorial](https://terokarvinen.com/2022/django-instant-crm-tutorial/) by Tero Karvinen, replacing the version with 3.2 by adding it to requirements:
 ```
 halonen@halonen-VirtualBox:~/django$ cat requirements.txt
