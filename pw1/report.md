@@ -10,6 +10,7 @@ Release:	22.04
 Codename:	jammy
 ```
 **a) Asenna Django-kehitysympäristö.**
+
 Installed Django Python web framework, and made a simple CRM with these instructions:
 [Django 4 Instant Customer Database Tutorial](https://terokarvinen.com/2022/django-instant-crm-tutorial/) by Tero Karvinen, replacing the version with 3.2 by adding it to requirements:
 ```
