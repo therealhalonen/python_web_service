@@ -12,6 +12,14 @@ Mozilla, # Django Tutorial Part 3: Using models: https://developer.mozilla.org/e
 
 `Used Ubuntu Mate 21.10, Lenovo Thinkpad E15`
 
+```
+sicki@Parasite:~$ lsb_release -a
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 21.10
+Release:	21.10
+Codename:	impish
+```
 Started making a new Django-project from scratch with same method as before. All steps included here, because the previous report was a little short. **(to be fixed later)**
 This is a database for rentable movies.
 **Started with installing virtualenv and/or check that i had the newest version:**
