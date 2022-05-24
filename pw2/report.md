@@ -72,7 +72,7 @@ Running migrations:
 ```
 **Edited settings.py and added the rental app to `installed apps`**
 ```
-(env) sicki@Parasite:~/testSite/movies$ micro movies/settings.py`
+(env) sicki@Parasite:~/testSite/movies$ micro movies/settings.py
 ```
 ```python
 #settings.py
