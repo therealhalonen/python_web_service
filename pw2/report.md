@@ -13,8 +13,8 @@ Mozilla, # Django Tutorial Part 3: Using models: https://developer.mozilla.org/e
 `Using Ubuntu Mate 21.10, Lenovo Thinkpad E15`
 
 Started making a new Django-project from scratch with same method as before. Will include all the steps here, because the previous report was a little short. **(to be fixed later)**
-This is gonna be a database for rentable movies.
-**Starting with installing virtualenv and/or check that i have the newest version:**
+This is a database for rentable movies.
+**Started with installing virtualenv and/or check that i had the newest version:**
 ```
 sicki@Parasite:~$ sudo apt-get -y install virtualenv
 Reading package lists... Done
@@ -24,7 +24,7 @@ virtualenv is already the newest version (20.4.6+ds-2)..
 sicki@Parasite:~$ mkdir testSite
 sicki@Parasite:~$ cd testSite
 ```
-**Setup virtualenv:**
+**Did a setup for virtualenv:**
 ```
 sicki@Parasite:~/testSite$ virtualenv --system-site-packages -p python3 env/
 created virtual environment CPython3.9.7.final.0-64 in 117ms
@@ -33,24 +33,24 @@ created virtual environment CPython3.9.7.final.0-64 in 117ms
     added seed packages: Django==3.2, asgiref==3.5.2, pip==20.3.4, pkg_resources==0.0.0, pytz==2022.1, setuptools==44.1.1, sqlparse==0.4.2, wheel==0.34.2
   activators BashActivator,CShellActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
 ```
-**Activate virtualenv**
+**Activated virtualenv**
 ```
 sicki@Parasite:~/testSite$ source env/bin/activate
 ```
-**Check thats pip is in the right place**
+**Checked that pip was in the right place**
 ```
 (env) sicki@Parasite:~/testSite$ which pip
 /home/sicki/testSite/env/bin/pip
 ```
-**Requirements have been manually changed to Django version 3.2, and installed with `pip install -r requirements.txt`** 
-**Checking that everything is ok with them:**
+**Requirements had been manually changed to Django version 3.2, and installed with `pip install -r requirements.txt`** 
+**Checked that everything is ok with them:**
 ```
 (env) sicki@Parasite:~/testSite$ cat requirements.txt
 django==3.2
 (env) sicki@Parasite:~/testSite$ django-admin --version
 3.2
 ```
-**Time to start the project called movies, cd to the right directory and making first-time migrations**
+**Started the project called movies, moved to the right directory and maked first-time migrations**
 ```
 (env) sicki@Parasite:~/testSite$ django-admin startproject movies
 (env) sicki@Parasite:~/testSite$ cd movies
@@ -62,15 +62,15 @@ Operations to perform:
 Running migrations:
   No migrations to apply.
 ```
-**Then creating superuser, and fill the needed fields it asks:**
+**Then created superuser, and filled the needed fields it asked:**
 ```
 (env) sicki@Parasite:~/testSite/movies$ ./manage.py createsuperuser
 ```
-**Starting an app named rental**
+**Started an app named rental**
 ```
 (env) sicki@Parasite:~/testSite/movies$ ./manage.py startapp rental
 ```
-**Edit settings.py and add the rental app to `installed apps`**
+**Edited settings.py and added the rental app to `installed apps`**
 ```
 (env) sicki@Parasite:~/testSite/movies$ micro movies/settings.py`
 ```
@@ -86,7 +86,7 @@ INSTALLED_APPS = [
     'rental', #added rental-app
 ]
 ```
-**Edit `models.py`, give a movie the fields for genre, made and short description** 
+**Edited `models.py`, gave a movie the fields for genre, made and short description** 
 ```
 (env) sicki@Parasite:~/testSite/movies$ micro rental/models.py
 ```
@@ -103,7 +103,7 @@ class Movie(models.Model):
     year_made = models.IntegerField(default=1900) # movie year
     description = models.TextField(default='short description of the movie', max_length=300) # short description
 ```
-**Editing `admin.py`**
+**Edited `admin.py`**
 ```
 (env) sicki@Parasite:~/testSite/movies$ micro rental/admin.py
 ```
@@ -114,8 +114,8 @@ from . import models
 
 admin.site.register(models.Movie)
 ```
-Now we have a database for movies.
-**Next we run it:**
+Now i had a database for movies ready.
+**Next i ran it:**
 ```
 (env) sicki@Parasite:~/testSite/movies$ ./manage.py makemigrations
 (env) sicki@Parasite:~/testSite/movies$ ./manage.py migrate
@@ -126,15 +126,15 @@ Django version 3.2, using settings 'movies.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 ```
-**Everything is working!**
+**Everything was working!**
 
 ## New stuff = ListView
 Now that i have everything set up, i want to make a site that lists the movies from the database.
-**First i edit `urls.py`:**
+**First i edited `urls.py`:**
 ```
 (env) sicki@Parasite:~/testSite/movies$ micro movies/urls.py
 ```
-and add MovieListView, and point it to root path, so that when the site loads, it loads by default.
+and added MovieListView, and pointed it to root path, so that when the site loads, it loads by default.
 **Also imported views from rental:**
 ```python
 #urls.py
@@ -147,7 +147,7 @@ urlpatterns = [
     path('', views.MovieListView.as_view()) #added this
 ]
 ```
-**Now i need to add stuff to `views.py`:**
+**Now i needed to add stuff to `views.py`:**
 ```
 (env) sicki@Parasite:~/testSite/movies$ micro rental/views.py`
 ```
@@ -159,7 +159,7 @@ from . import models
 class MovieListView(ListView):
     model = models.Movie
 ```
-**And lastly i make a .html, for movie list. This is gonna be the page showing in the front:**
+**And lastly i made a .html, for movie list. This will be the page showing in the front:**
 ```(env) sicki@Parasite:~/testSite/movies$ cd rental
 (env) sicki@Parasite:~/testSite/movies/rental$ mkdir templates
 (env) sicki@Parasite:~/testSite/movies/rental$ cd templates
@@ -190,7 +190,7 @@ document.getElementById("date").innerHTML = time;
 
 </body>
 ```
-**Now i cd back to `/testSite/movies/`, make migrations and migrate. Then run the server to see if its all working:**
+**Now i moved back to `/testSite/movies/`, made migrations and migrated. Then ran the server, to see if everything was working:**
 ```
 (env) sicki@Parasite:~/testSite/movies$ ./manage.py makemigrations
 No changes detected
@@ -209,13 +209,13 @@ Django version 3.2, using settings 'movies.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 ```
-**Smoothly running locally now, i first want to go to the admin panel to add some movies:**
+**Smoothly ran locally. I went to the admin panel first and added some movies:**
 ![Image 1](/pw2/res/movie_list_admin.png)
 ![Image 2](/pw2/res/movie_detail.png)
-**After adding them and stuff to the fields, i want to check the front page to see if everything is in order:**
+**After adding them and stuff to the fields, i wanted to check the front page to see if everything was in order:**
 ![Image 3](/pw2/res/final_listView.png)
 
-**Painless**, everything seems like supposed to!
+**Painless**, everything seemed like supposed to!
 Total time was ~2h, including reporting.
 
 
