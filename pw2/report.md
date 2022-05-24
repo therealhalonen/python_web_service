@@ -121,7 +121,11 @@ Next we run it:
 (env) sicki@Parasite:~/testSite/movies$ ./manage.py migrate
 (env) sicki@Parasite:~/testSite/movies$ ./manage.py runserver
 ```
-![image](image)
+```
+Django version 3.2, using settings 'movies.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+```
 **Everything is working!**
 
 ## New stuff = ListView
