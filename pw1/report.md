@@ -18,6 +18,7 @@ halonen@halonen-VirtualBox:~/django$ cat requirements.txt
 django==3.2
 ```
 **b) Lisää omia kenttiä malliin.**
+
 After all was set up, i started to add stuff using recommended `micro`
 
 ```
