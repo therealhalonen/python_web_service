@@ -46,7 +46,9 @@ Checked few sites, but didnt really get it:
 [Stack overflow](https://stackoverflow.com/questions/56310322/django-datetimefield-with-auto-now-add-asks-for-default) 
 
 Everything else running smooth:
+
 **c) Tee lisää käyttäjiä, jotka saavat kirjautua Djangon adminiin**
+
 Added another user, gave Staff and Superuser status
 ![Image 1](/pw1/res/adduser.png)
 
