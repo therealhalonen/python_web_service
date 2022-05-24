@@ -1,4 +1,5 @@
-# Setting up Django 3.2, creating simple CRM and testing & adding stuff to it.
+#pw1 Hello DJ A
+## Setting up Django 3.2, creating simple CRM and testing & adding stuff to it.
 Using [Ubuntu Mate 22.04 LTS](https://ubuntu-mate.org/download/amd64/) in VirtualBox.
 ```
 halonen@halonen-VirtualBox:~$ lsb_release -a
@@ -8,12 +9,14 @@ Description:	Ubuntu 22.04 LTS
 Release:	22.04
 Codename:	jammy
 ```
+**a) Asenna Django-kehitysympäristö.**
 Installed Django Python web framework, and made a simple CRM with these instructions:
 [Django 4 Instant Customer Database Tutorial](https://terokarvinen.com/2022/django-instant-crm-tutorial/) by Tero Karvinen, replacing the version with 3.2 by adding it to requirements:
 ```
 halonen@halonen-VirtualBox:~/django$ cat requirements.txt
 django==3.2
 ```
+**b) Lisää omia kenttiä malliin.**
 After all was set up, i started to add stuff using recommended `micro`
 
 ```
@@ -42,9 +45,8 @@ Checked few sites, but didnt really get it:
 [Stack overflow](https://stackoverflow.com/questions/56310322/django-datetimefield-with-auto-now-add-asks-for-default) 
 
 Everything else running smooth:
-
+**c) Tee lisää käyttäjiä, jotka saavat kirjautua Djangon adminiin**
 Added another user, gave Staff and Superuser status
-
 ![Image 1](/pw1/res/adduser.png)
 
 ![Image 2](/pw1/res/added_user.png)
@@ -59,4 +61,4 @@ Added few customers:
 
 ![Image 6](/pw1/res/customer_fields.png)
 
-
+**edited: report will be updated later, to more detailed explanation about setting the Django enviroment.**
