@@ -34,14 +34,14 @@ created virtual environment CPython3.9.7.final.0-64 in 117ms
   activators BashActivator,CShellActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
 ```
 **Activate virtualenv**
-
-`sicki@Parasite:~/testSite$ source env/bin/activate`
-
+```
+sicki@Parasite:~/testSite$ source env/bin/activate
+```
 **Check thats pip is in the right place**
-
-`(env) sicki@Parasite:~/testSite$ which pip
-/home/sicki/testSite/env/bin/pip`
-
+```
+(env) sicki@Parasite:~/testSite$ which pip
+/home/sicki/testSite/env/bin/pip
+```
 **Requirements have been manually changed to Django version 3.2, and installed with `pip install -r requirements.txt`** 
 **Checking that everything is ok with them:**
 ```
@@ -63,17 +63,17 @@ Running migrations:
   No migrations to apply.
 ```
 **Then creating superuser, and fill the needed fields it asks:**
-
-`(env) sicki@Parasite:~/testSite/movies$ ./manage.py createsuperuser`
-
+```
+(env) sicki@Parasite:~/testSite/movies$ ./manage.py createsuperuser
+```
 **Starting an app named rental**
-
-`(env) sicki@Parasite:~/testSite/movies$ ./manage.py startapp rental`
-
+```
+(env) sicki@Parasite:~/testSite/movies$ ./manage.py startapp rental
+```
 **Edit settings.py and add the rental app to `installed apps`**
-
-`(env) sicki@Parasite:~/testSite/movies$ micro movies/settings.py`
-
+```
+(env) sicki@Parasite:~/testSite/movies$ micro movies/settings.py`
+```
 ```python
 #settings.py
 INSTALLED_APPS = [
@@ -87,9 +87,9 @@ INSTALLED_APPS = [
 ]
 ```
 **Edit `models.py`, give a movie the fields for genre, made and short description** 
-
-`(env) sicki@Parasite:~/testSite/movies$ micro rental/models.py`
-
+```
+(env) sicki@Parasite:~/testSite/movies$ micro rental/models.py
+```
 ```python
 #models.py
 from django.db import models
@@ -104,9 +104,9 @@ class Movie(models.Model):
     description = models.TextField(default='short description of the movie', max_length=300) # short description
 ```
 **Editing `admin.py`**
-
-`(env) sicki@Parasite:~/testSite/movies$ micro rental/admin.py`
-
+```
+(env) sicki@Parasite:~/testSite/movies$ micro rental/admin.py
+```
 ```python
 #admin.py
 from django.contrib import admin
@@ -115,7 +115,7 @@ from . import models
 admin.site.register(models.Movie)
 ```
 Now we have a database for movies.
-Next we run it:
+**Next we run it:**
 ```
 (env) sicki@Parasite:~/testSite/movies$ ./manage.py makemigrations
 (env) sicki@Parasite:~/testSite/movies$ ./manage.py migrate
@@ -130,12 +130,12 @@ Quit the server with CONTROL-C.
 
 ## New stuff = ListView
 Now that i have everything set up, i want to make a site that lists the movies from the database.
-First i edit `urls.py`:
+**First i edit `urls.py`:**
 ```
 (env) sicki@Parasite:~/testSite/movies$ micro movies/urls.py
 ```
 and add MovieListView, and point it to root path, so that when the site loads, it loads by default.
-Also imported views from rental:
+**Also imported views from rental:**
 ```python
 #urls.py
 from django.contrib import admin
@@ -147,10 +147,10 @@ urlpatterns = [
     path('', views.MovieListView.as_view()) #added this
 ]
 ```
-Now i need to add stuff to `views.py`:
-
-`(env) sicki@Parasite:~/testSite/movies$ micro rental/views.py`
-
+**Now i need to add stuff to `views.py`:**
+```
+(env) sicki@Parasite:~/testSite/movies$ micro rental/views.py`
+```
 ```python
 #views.py
 from django.views.generic import ListView
@@ -159,7 +159,7 @@ from . import models
 class MovieListView(ListView):
     model = models.Movie
 ```
-And lastly i make a .html, for movie list. This is gonna be the page showing in the front.
+**And lastly i make a .html, for movie list. This is gonna be the page showing in the front:**
 ```(env) sicki@Parasite:~/testSite/movies$ cd rental
 (env) sicki@Parasite:~/testSite/movies/rental$ mkdir templates
 (env) sicki@Parasite:~/testSite/movies/rental$ cd templates
@@ -167,7 +167,7 @@ And lastly i make a .html, for movie list. This is gonna be the page showing in 
 (env) sicki@Parasite:~/testSite/movies/rental/templates$ cd rental
 (env) sicki@Parasite:~/testSite/movies/rental/templates/rental$ micro movie_list.html
 ```
-Added a basic HTML code with a little JS, just for testing purposes, critical code for making the list is commented:
+**Added a basic HTML code with a little JS, just for testing purposes, critical code for making the list is commented:**
 ```html
 <!-- movies_list.html-->
 <html>
@@ -190,7 +190,7 @@ document.getElementById("date").innerHTML = time;
 
 </body>
 ```
-Now i cd back to `/testSite/movies/`, make migrations and migrate. Then run the server to see if its all working.
+**Now i cd back to `/testSite/movies/`, make migrations and migrate. Then run the server to see if its all working:**
 ```
 (env) sicki@Parasite:~/testSite/movies$ ./manage.py makemigrations
 No changes detected
@@ -209,10 +209,10 @@ Django version 3.2, using settings 'movies.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 ```
-Smoothly running locally now, i first want to go to the admin panel to add some movies:
+**Smoothly running locally now, i first want to go to the admin panel to add some movies:**
 ![Image 1](/pw2/res/movie_list_admin.png)
 ![Image 2](/pw2/res/movie_detail.png)
-After adding them and stuff to the fields, i want to check the front page to see if everything is in order:
+**After adding them and stuff to the fields, i want to check the front page to see if everything is in order:**
 ![Image 3](/pw2/res/final_listView.png)
 
 **Painless**, everything seems like supposed to!
