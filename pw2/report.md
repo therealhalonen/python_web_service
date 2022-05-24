@@ -131,7 +131,9 @@ Quit the server with CONTROL-C.
 ## New stuff = ListView
 Now that i have everything set up, i want to make a site that lists the movies from the database.
 First i edit `urls.py`:
-```(env) sicki@Parasite:~/testSite/movies$ micro movies/urls.py```
+```
+(env) sicki@Parasite:~/testSite/movies$ micro movies/urls.py
+```
 and add MovieListView, and point it to root path, so that when the site loads, it loads by default.
 Also imported views from rental:
 ```python
