@@ -10,9 +10,9 @@ Tero Karvinen, Django CRM tutorial: https://terokarvinen.com/2022/django-instant
 Mozilla, # Django Tutorial Part 3: Using models: https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Models
 
 
-`Using Ubuntu Mate 21.10, Lenovo Thinkpad E15`
+`Used Ubuntu Mate 21.10, Lenovo Thinkpad E15`
 
-Started making a new Django-project from scratch with same method as before. Will include all the steps here, because the previous report was a little short. **(to be fixed later)**
+Started making a new Django-project from scratch with same method as before. All steps included here, because the previous report was a little short. **(to be fixed later)**
 This is a database for rentable movies.
 **Started with installing virtualenv and/or check that i had the newest version:**
 ```
