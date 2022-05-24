@@ -2,9 +2,13 @@
 # ListView
 ### a) Tee alusta lähtien uusi Django-projekti. Tee siihen sivu, joka listaa tietueita tietokannasta ilman kirjautumista. Valitse jokin muu aihe kuin aiemman esimerkin CRM. Aivan simppeli esimerkkiprojekti riittää, mutta valitse sille jokin esimerkkiaihe.
 Sources used in this report:
+
 Tero Karvinen himself, in the course: https://terokarvinen.com/2021/python-web-service-from-idea-to-production-2022/
+
 Tero Karvinen, Django CRM tutorial: https://terokarvinen.com/2022/django-instant-crm-tutorial/
+
 Mozilla, # Django Tutorial Part 3: Using models: https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Models
+
 
 `Using Ubuntu Mate 21.10, Lenovo Thinkpad E15`
 
@@ -30,9 +34,11 @@ created virtual environment CPython3.9.7.final.0-64 in 117ms
   activators BashActivator,CShellActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
 ```
 **Activate virtualenv**
+
 `sicki@Parasite:~/testSite$ source env/bin/activate`
 
 **Check thats pip is in the right place**
+
 `(env) sicki@Parasite:~/testSite$ which pip
 /home/sicki/testSite/env/bin/pip`
 
@@ -126,7 +132,9 @@ urlpatterns = [
 ]
 ```
 Now i need to add stuff to `views.py`:
+
 `(env) sicki@Parasite:~/testSite/movies$ micro rental/views.py`
+
 ```python
 #views.py
 from django.views.generic import ListView
@@ -190,6 +198,7 @@ Smoothly running locally now, i first want to go to the admin panel to add some 
 ![Image 2](/pw2/res/movie_detail.png)
 After adding them and stuff to the fields, i want to check the front page to see if everything is in order:
 ![Image 3](/pw2/res/final_listView.png)
+
 **Painless**, everything seems like supposed to!
 Total time was ~2h, including reporting.
 
