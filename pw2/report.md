@@ -87,7 +87,9 @@ INSTALLED_APPS = [
 ]
 ```
 **Edit `models.py`, give a movie the fields for genre, made and short description** 
+
 `(env) sicki@Parasite:~/testSite/movies$ micro rental/models.py`
+
 ```python
 #models.py
 from django.db import models
@@ -102,7 +104,9 @@ class Movie(models.Model):
     description = models.TextField(default='short description of the movie', max_length=300) # short description
 ```
 **Editing `admin.py`**
+
 `(env) sicki@Parasite:~/testSite/movies$ micro rental/admin.py`
+
 ```python
 #admin.py
 from django.contrib import admin
