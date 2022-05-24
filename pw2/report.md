@@ -63,11 +63,17 @@ Running migrations:
   No migrations to apply.
 ```
 **Then creating superuser, and fill the needed fields it asks:**
+
 `(env) sicki@Parasite:~/testSite/movies$ ./manage.py createsuperuser`
+
 **Starting an app named rental**
+
 `(env) sicki@Parasite:~/testSite/movies$ ./manage.py startapp rental`
+
 **Edit settings.py and add the rental app to `installed apps`**
-(env) sicki@Parasite:~/testSite/movies$ micro movies/settings.py
+
+`(env) sicki@Parasite:~/testSite/movies$ micro movies/settings.py`
+
 ```python
 #settings.py
 INSTALLED_APPS = [
