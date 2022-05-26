@@ -91,7 +91,7 @@ Superuser created successfully.
 (env) sicki@Parasite:~/django-site/anthalo$ micro anthalo/settings.py #ADDED CRUD TO INSTALLED_APPS
 ```
 **Edit `admin.py`**
-```
+```console
 (env) sicki@Parasite:~/django-site/anthalo$ micro crud/admin.py
 ```
 ```python
@@ -103,7 +103,7 @@ admin.site.register(models.Crud) #register
 ```
 # New Stuff - Making necessary fields
 First edited `models.py`
-```
+```console
 (env) sicki@Parasite:~/django-site/anthalo$ micro crud/models.py
 ```python
 #models.py
@@ -171,7 +171,7 @@ urlpatterns = [
 ]
 ```
 Now i ran a test to see if everything "would" work, as there are more steps to do, but just a side check.
-```bash
+```console
 (env) sicki@Parasite:~/django-site/anthalo$ micro crud/models.py
 (env) sicki@Parasite:~/django-site/anthalo$ micro crud/admin.py
 (env) sicki@Parasite:~/django-site/anthalo$ micro anthalo/urls.py
@@ -189,7 +189,7 @@ Running migrations:
 **Now i needed to do few .html:s so that nothing points to a page that doesnt exist and gives errors.**
 
 First make directory for `templates`and make/edit a file for `list`
-```
+```console
 (env) sicki@Parasite:~/django-site/anthalo$ mkdir -p crud/templates/crud/
 (env) sicki@Parasite:~/django-site/anthalo$ micro crud/templates/crud/crud_list.html
 ```
