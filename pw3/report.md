@@ -237,7 +237,7 @@ Now i needed to make a .html for `form`
 ```
 (env) sicki@Parasite:~/django-site/anthalo$ micro crud/templates/crud/crud_form.html
 ```
-``````html
+```html
 Specs:
 <form method=post>
 	{% csrf_token %}
