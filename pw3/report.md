@@ -4,10 +4,15 @@
 
 Sources used in this report:
 Tero Karvinen himself, in the course: https://terokarvinen.com/2021/python-web-service-from-idea-to-production-2022/
+
 Karvinen 2022: [Django 4 Instant Customer Database Tutorial](https://terokarvinen.com/2022/django-instant-crm-tutorial/)
+
 Mozilla Developer Network contributors 2022: Django Web Framework (Python): [Django Tutorial Part 3: Using models](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Models)
+
 Django contributors 2022: Django 3.2 documenation: [Generic display views](https://docs.djangoproject.com/en/3.2/ref/class-based-views/generic-display/) (DetailView, ListView)
+
 Refresh Oxford 2022: [Classy Class-Based Views](http://ccbv.co.uk/projects/Django/3.2/) (CreateView, ListView, DetailView, UpdateView, DeleteView)
+
 Django contributors 2022: Django 3.2 documenation: [Generic editing views](https://docs.djangoproject.com/en/3.2/ref/class-based-views/generic-editing/) (CreateView, UpdateView, DeleteView)
 
 `Used Ubuntu Mate 21.10, Lenovo Thinkpad E15`
@@ -20,7 +25,6 @@ Description:	Ubuntu 21.10
 Release:	21.10
 Codename:	impish
 ```
-Explanation: plaaplaaplaa
 **Steps taken to get project and app:**
 ```console
 sicki@Parasite:~$ mkdir django-site
@@ -86,7 +90,7 @@ Superuser created successfully.
 (env) sicki@Parasite:~/django-site/anthalo$ ./manage.py startapp crud
 (env) sicki@Parasite:~/django-site/anthalo$ micro anthalo/settings.py #ADDED CRUD TO INSTALLED_APPS
 ```
-**Edit `admin.py`*
+**Edit `admin.py`**
 ```
 (env) sicki@Parasite:~/django-site/anthalo$ micro crud/admin.py
 ```
@@ -182,7 +186,8 @@ Operations to perform:
 Running migrations:
   Applying crud.0001_initial... OK
   ```
-  **Now i needed to do few .html:s so that nothing points to a page that doesnt exist and gives errors.**
+**Now i needed to do few .html:s so that nothing points to a page that doesnt exist and gives errors.**
+
 First make directory for `templates`and make/edit a file for `list`
 ```
 (env) sicki@Parasite:~/django-site/anthalo$ mkdir -p crud/templates/crud/
