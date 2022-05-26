@@ -94,6 +94,7 @@ Superuser created successfully.
 ```console
 (env) sicki@Parasite:~/django-site/anthalo$ micro crud/admin.py
 ```
+
 ```python
 #admin.py
 from django.contrib import admin
@@ -105,6 +106,7 @@ admin.site.register(models.Crud) #register
 First edited `models.py`
 ```console
 (env) sicki@Parasite:~/django-site/anthalo$ micro crud/models.py
+```
 ```python
 #models.py
 from django.db import models
