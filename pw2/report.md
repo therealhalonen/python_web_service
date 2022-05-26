@@ -22,6 +22,7 @@ Codename:	impish
 ```
 Started making a new Django-project from scratch with same method as before. All steps included here, because the previous report was a little short. **(to be fixed later)**
 This is a database for rentable movies.
+
 **Started with installing virtualenv and/or check that i had the newest version:**
 ```
 sicki@Parasite:~$ sudo apt-get -y install virtualenv
@@ -51,6 +52,7 @@ sicki@Parasite:~/testSite$ source env/bin/activate
 /home/sicki/testSite/env/bin/pip
 ```
 **Requirements had been manually changed to Django version 3.2, and installed with `pip install -r requirements.txt`** 
+
 **Checked that everything is ok with them:**
 ```
 (env) sicki@Parasite:~/testSite$ cat requirements.txt
@@ -123,6 +125,7 @@ from . import models
 admin.site.register(models.Movie)
 ```
 Now i had a database for movies ready.
+
 **Next i ran it:**
 ```
 (env) sicki@Parasite:~/testSite/movies$ ./manage.py makemigrations
@@ -143,6 +146,7 @@ Now that i have everything set up, i want to make a site that lists the movies f
 (env) sicki@Parasite:~/testSite/movies$ micro movies/urls.py
 ```
 and added MovieListView, and pointed it to root path, so that when the site loads, it loads by default.
+
 **Also imported views from rental:**
 ```python
 #urls.py
