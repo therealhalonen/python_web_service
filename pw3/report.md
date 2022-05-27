@@ -54,9 +54,7 @@ Collecting sqlparse>=0.2.2
 Installing collected packages: sqlparse, pytz, asgiref, django
 Successfully installed asgiref-3.5.2 django-3.2 pytz-2022.1 sqlparse-0.4.2
 (env) sicki@Parasite:~/django-site$ django-admin startproject anthalo
-(env) sicki@Parasite:~/django-site$ ./manage.py createsuperuser
 (env) sicki@Parasite:~/django-site$ cd anthalo
-(env) sicki@Parasite:~/django-site/anthalo$ ./manage.py createsuperuser
 (env) sicki@Parasite:~/django-site/anthalo$ ./manage.py makemigrations
 No changes detected
 (env) sicki@Parasite:~/django-site/anthalo$ ./manage.py migrate
