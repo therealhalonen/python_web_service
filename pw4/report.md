@@ -193,13 +193,12 @@ def register(response):
         form = RegisterForm()
         
     return render(response, "registration/register.html", {"form":form})
-
+#registration end
 class BookListView(ListView):
     model = models.Book
 
 class BookDetailView(DetailView):
-    model = models.Book
-#registration end    
+    model = models.Book    
 ```
 
 Then i edited the front page to show/hide stuff according to if user is logged in or not:
