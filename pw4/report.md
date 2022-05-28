@@ -290,7 +290,7 @@ INSTALLED_APPS = [
     'crispy_forms', #added django-crispy-forms
 ]
 ```
-This is a beta-version of the registering page (because it doesnt pass the validator without errors, and also i want to add correct links to when registering is success etc):
+This is a beta-version of the registering page (because the page doesnt pass the [validator](https://validator.w3.org/#validate_by_input) without errors, and also i want to add correct links to when registering is success etc):
 ```console
 (env) sicki@Salvage-820-Linux:~/myProject/library$ micro book/templates/registration/register.html
 ```
