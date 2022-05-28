@@ -7,16 +7,38 @@
 
 *This report was optional, and will probably contain **errors**. These are just for my **personal use** later.
 Also comments on the codes are for my personal notes for learning and remembering stuff*
+Sources used:
+
+Tero Karvinen himself, in the course: https://terokarvinen.com/2021/python-web-service-from-idea-to-production-2022/
 
 Noob-friendly source for login-page and authentication i used, are/were:
+
 [Putkis-Dude: Commit #1](https://github.com/PutkisDude/simple-django/commit/fd2d57b31af1684c5f1990fe2676c51ed47ccc6b)
+
 [Putkis-Dude: Commit #2](https://github.com/PutkisDude/simple-django/commit/d487116c9427135f94b8c15d17faf496e3512a20)
+
 **Thanks for sharing!** 
+
 Login and registering a user:
+
 [LearnDjango - Login and Logout Tutorial](https://learndjango.com/tutorials/django-login-and-logout-tutorial)
+
 [Crispy Forms](https://ordinarycoders.com/blog/article/render-a-django-form-with-bootstrap)
+
 [CSEstack.org](https://www.csestack.org/django-sign-up-registration-form/)
+
 [techwithTim](https://www.csestack.org/django-sign-up-registration-form/)
+
+`Used Ubuntu MATE 22.04, HP Elitebook 820 G4`
+
+```console
+sicki@Salvage-820-Linux:~$ lsb_release -a
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 22.04 LTS
+Release:	22.04
+Codename:	jammy
+```
 
 So i started to make a new django-project from scratch, the same way as previously: [pw3](https://github.com/therealhalonen/python_web_service/blob/master/pw3/report.md)
 This time:
