@@ -1,9 +1,9 @@
-# pw4 
-a) Oma kirjatietokanta. Tee alusta lähtien kirjatietokanta Djangolla. Siinä pitää olla ylläpitoliittymä salasanan takana. Ja admin-panelin ulkopuolella liittymä, jossa voi luoda, lukea, muokata ja poistaa kirjoja (CRUD). Tässä a-kohdassa admin-panelin ulkopuolella ei tarvitse olla kirjautumista. Tästä tehtävästä ei tarvitse tehdä yksityiskohtaista raporttia, palauta ohjelman lähdekoodi, README.md ja ruutukaappaus. Palautus heti kun on valmista, viimeistään su 20:00.
+# MyBooks
+**a) Oma kirjatietokanta. Tee alusta lähtien kirjatietokanta Djangolla. Siinä pitää olla ylläpitoliittymä salasanan takana. Ja admin-panelin ulkopuolella liittymä, jossa voi luoda, lukea, muokata ja poistaa kirjoja (CRUD). Tässä a-kohdassa admin-panelin ulkopuolella ei tarvitse olla kirjautumista. Tästä tehtävästä ei tarvitse tehdä yksityiskohtaista raporttia, palauta ohjelman lähdekoodi, README.md ja ruutukaappaus. Palautus heti kun on valmista, viimeistään su 20:00.**
 
-b) Vapaaehtoinen, vaikeahko: laita muokkaussivut (CUD) salasanan taakse. (LoginRequiredMixin)
+**b) Vapaaehtoinen, vaikeahko: laita muokkaussivut (CUD) salasanan taakse. (LoginRequiredMixin)**
 
-c) Vapaaehtoinen, vaikeampi: laita käyttäjille mahdollisuus rekiströityä. (CreateView, User, UserForm)
+**c) Vapaaehtoinen, vaikeampi: laita käyttäjille mahdollisuus rekiströityä. (CreateView, User, UserForm)**
 
 *This report was optional, and will probably contain **errors**. These are just for my **personal use** later.
 Also comments on the codes are for my personal notes for learning and remembering stuff*
